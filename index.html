@@ -3,176 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nidhi Jain | Data Scientist & AI Engineer</title>
-    <meta name="description" content="Portfolio of Nidhi Jain - Data Scientist specializing in ML, NLP, and Data Engineering.">
-    
+    <title>Nidhi Jain | Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                        display: ['Clash Display', 'sans-serif'],
-                    },
-                    colors: {
-                        slate: {
-                            850: '#151e2e',
-                            900: '#0f172a',
-                            950: '#020617',
-                        },
-                        emerald: {
-                            400: '#34d399',
-                            500: '#10b981',
-                        },
-                        accent: '#38bdf8', // Sky blue for "Data"
-                    },
-                    backgroundImage: {
-                        'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
-                    }
-                }
-            }
-        }
-    </script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            background-color: #020617;
-            color: #cbd5e1;
-        }
-        
-        .bg-grid {
-            background-size: 40px 40px;
-            mask-image: linear-gradient(to bottom, transparent, 10%, black, 90%, transparent);
-        }
-
-        /* Professional Card Styles */
-        .pro-card {
-            background: rgba(30, 41, 59, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-        
-        .pro-card:hover {
-            background: rgba(30, 41, 59, 0.7);
-            border-color: rgba(56, 189, 248, 0.2);
-            transform: translateY(-2px);
-        }
-
-        /* Text Gradient */
-        .text-gradient-accent {
-            background: linear-gradient(135deg, #38bdf8 0%, #34d399 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(24, 24, 27, 0.8); backdrop-filter: blur(12px); }
     </style>
 </head>
-<body class="antialiased font-sans selection:bg-emerald-500/30 selection:text-emerald-200">
+<body class="bg-zinc-950 text-zinc-300 selection:bg-indigo-500/30">
 
-    <div class="fixed inset-0 bg-grid-pattern bg-grid opacity-[0.15] pointer-events-none z-0"></div>
-
-    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="#" class="font-display text-2xl font-bold tracking-wide text-white">
-                Nidhi Jain<span class="text-emerald-500">.</span>
-            </a>
-            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
-                <a href="#about" class="hover:text-white transition">About</a>
-                <a href="#experience" class="hover:text-white transition">Experience</a>
-                <a href="#skills" class="hover:text-white transition">Stack</a>
-                <a href="#projects" class="hover:text-white transition">Projects</a>
+    <nav class="fixed w-full z-50 glass border-b border-zinc-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-white font-bold tracking-tighter text-xl">NJ<span class="text-indigo-500">.</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-indigo-400 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
             </div>
-            <a href="#contact" class="hidden md:flex items-center gap-2 px-5 py-2.5 bg-white text-slate-950 rounded-full font-semibold text-sm hover:bg-slate-200 transition">
-                <span>Contact Me</span>
-                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
         </div>
     </nav>
 
-    <section class="min-h-screen flex items-center pt-20 px-6 relative z-10">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-8">
-                    <span class="relative flex h-2 w-2">
-                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                      <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                    </span>
-                    <span class="text-xs font-semibold text-emerald-400 tracking-wide uppercase">Available for Hire</span>
-                </div>
-                
-                <h1 class="font-display text-5xl md:text-7xl font-bold leading-[1.1] mb-6 text-white">
-                    Turning Complex Data into <br>
-                    <span class="text-gradient-accent">Intelligent Action.</span>
-                </h1>
-                
-                <p class="text-lg text-slate-400 mb-10 max-w-xl leading-relaxed">
-                    I am a Data Scientist and Engineer. I build robust <strong>ETL pipelines</strong>, deploy <strong>Machine Learning models</strong>, and architect <strong>AI solutions</strong> that solve real business problems.
-                </p>
-
-                <div class="flex flex-wrap gap-4">
-                    <a href="#projects" class="px-8 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-semibold transition shadow-lg shadow-emerald-500/20 flex items-center gap-2">
-                        <i data-lucide="database"></i> View Data Projects
-                    </a>
-                    <a href="https://linkedin.com/in/nidhi-jain-1607" target="_blank" class="px-8 py-3.5 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-semibold transition border border-slate-700 flex items-center gap-2">
-                        <i data-lucide="linkedin"></i> LinkedIn
-                    </a>
-                </div>
-                
-                <div class="grid grid-cols-3 gap-8 mt-16 border-t border-slate-800 pt-8">
-                    <div>
-                        <div class="text-3xl font-display font-bold text-white">4+</div>
-                        <div class="text-sm text-slate-500 font-medium">Years coding</div>
-                    </div>
-                    <div>
-                        <div class="text-3xl font-display font-bold text-white">M.Sc.</div>
-                        <div class="text-sm text-slate-500 font-medium">Data Science</div>
-                    </div>
-                    <div>
-                        <div class="text-3xl font-display font-bold text-white">15+</div>
-                        <div class="text-sm text-slate-500 font-medium">Projects Delivered</div>
-                    </div>
-                </div>
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-4xl text-center">
+            <h2 class="text-indigo-500 font-mono mb-4 tracking-widest uppercase text-sm">Software Engineer & Data Specialist</h2>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+                Nidhi Jain<span class="text-indigo-500">.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Building robust solutions with <span class="text-zinc-200">Python</span>, 
+                architecting data insights in <span class="text-zinc-200">R</span>, 
+                and engineering enterprise applications with <span class="text-zinc-200">C#</span>.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition shadow-lg shadow-indigo-500/20">
+                    View Projects
+                </a>
+                <a href="#contact" class="border border-zinc-700 hover:border-zinc-500 text-zinc-300 px-8 py-3 rounded-lg font-semibold transition">
+                    Get In Touch
+                </a>
             </div>
+        </div>
+    </section>
 
-            <div class="relative hidden lg:block">
-                <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-sky-500 rounded-2xl blur opacity-20"></div>
-                <div class="pro-card rounded-2xl p-6 relative">
-                    <div class="flex items-center justify-between mb-8 border-b border-white/5 pb-4">
-                        <div class="flex gap-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <div class="text-xs font-mono text-slate-500">analysis_pipeline.py</div>
+    <section id="about" class="py-24 px-6 bg-zinc-900/50">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6">Versatile Technical Expertise</h2>
+                    <p class="text-zinc-400 leading-relaxed mb-4">
+                        Based in Heilbronn, Germany, I specialize in bridging the gap between complex data analysis and scalable software architecture. My background at institutions like **Fraunhofer Institute** has honed my ability to solve real-world problems using AI and Machine Learning.
+                    </p>
+                    <p class="text-zinc-400 leading-relaxed">
+                        Whether it's developing RAG agents, building speech interfaces, or optimizing backend workflows, I focus on writing clean, maintainable code that delivers measurable impact.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-zinc-800/50 border border-zinc-700 rounded-xl">
+                        <h4 class="text-white font-bold text-xl">2+</h4>
+                        <p class="text-xs uppercase tracking-wider text-zinc-500">Years Experience</p>
                     </div>
-                    <div class="space-y-4 font-mono text-sm">
-                        <div class="flex gap-4"><span class="text-slate-500">01</span> <span class="text-purple-400">import</span> <span class="text-white">pandas</span> <span class="text-purple-400">as</span> <span class="text-white">pd</span></div>
-                        <div class="flex gap-4"><span class="text-slate-500">02</span> <span class="text-purple-400">import</span> <span class="text-white">torch</span></div>
-                        <div class="flex gap-4"><span class="text-slate-500">03</span> <span class="text-white"></span></div>
-                        <div class="flex gap-4"><span class="text-slate-500">04</span> <span class="text-emerald-400"># Load and Process Data</span></div>
-                        <div class="flex gap-4"><span class="text-slate-500">05</span> <span class="text-white">df = pd.read_sql(<span class="text-sky-300">query</span>, <span class="text-sky-300">connection</span>)</span></div>
-                        <div class="flex gap-4"><span class="text-slate-500">06</span> <span class="text-white">df[<span class="text-green-300">'normalized'</span>] = scaler.fit_transform(df)</span></div>
-                        <div class="flex gap-4"><span class="text-slate-500">07</span> <span class="text-white">model = <span class="text-yellow-300">TransformerModel</span>(input_dim=512)</span></div>
-                        <div class="flex gap-4"><span class="text-slate-500">08</span> <span class="text-blue-400">return</span> <span class="text-white">model.predict(df)</span></div>
+                    <div class="p-4 bg-zinc-800/50 border border-zinc-700 rounded-xl">
+                        <h4 class="text-white font-bold text-xl">10+</h4>
+                        <p class="text-xs uppercase tracking-wider text-zinc-500">Projects Done</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="py-24 px-6 relative z-10 bg-slate-900/50">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="font-display text-3xl font-bold text-white mb-12 flex items-center gap-3">
-                <i data-lucide="briefcase" class="text-emerald-500"></i> Professional History
-            </h2>
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-4">Technical Proficiency</h2>
+            <div class="h-1 w-20 bg-indigo-500 mx-auto"></div>
+        </div>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="p-8 bg-zinc-900 border border-zinc-800 rounded-2xl hover:border-indigo-500/50 transition group">
+                <div class="w-12 h-12 bg-indigo-500/10 rounded-lg flex items-center justify-center mb-6 text-indigo-500 group-hover:bg-indigo-500 group-hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Python</h3>
+                <p class="text-sm text-zinc-400 leading-relaxed">Expertise in Backend Development, Automation, and AI/ML models (NLP & RAG Agents).</p>
+            </div>
+            <div class="p-8 bg-zinc-900 border border-zinc-800 rounded-2xl hover:border-indigo-500/50 transition group">
+                <div class="w-12 h-12 bg-indigo-500/10 rounded-lg flex items-center justify-center mb-6 text-indigo-500 group-hover:bg-indigo-500 group-hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">R Language</h3>
+                <p class="text-sm text-zinc-400 leading-relaxed">Statistical modeling, deep data analysis, and visualization for research-driven insights.</p>
+            </div>
+            <div class="p-8 bg-zinc-900 border border-zinc-800 rounded-2xl hover:border-indigo-500/50 transition group">
+                <div class="w-12 h-12 bg-indigo-500/10 rounded-lg flex items-center justify-center mb-6 text-indigo-500 group-hover:bg-indigo-500 group-hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">C# / .NET</h3>
+                <p class="text-sm text-zinc-400 leading-relaxed">Building scalable enterprise applications and cross-platform desktop solutions.</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="
+    <section id="projects" class="py-24 px-6 bg-zinc-900/30">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12">Featured Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 flex flex-col">
+                    <div class="h-48 bg-zinc-800 flex items-center justify-center text-zinc-700 italic">Project Preview</div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">RAG AI Agents</h3>
+                        <p class="text-zinc-400 text-sm mb-4 flex-grow">A sophisticated retrieval-augmented generation system for processing local documentation.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] bg-zinc-800 text-indigo-400 px-2 py-1 rounded uppercase font-bold tracking-wider">Python</span>
+                            <span class="text-[10px] bg-zinc-800 text-indigo-400 px-2 py-1 rounded uppercase font-bold tracking-wider">LangChain</span>
+                        </div>
+                        <a href="https://github.com/nidhijain16" class="text-white text-sm font-bold flex items-center hover:text-indigo-400 transition">
+                            View on GitHub <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 flex flex-col">
+                    <div class="h-48 bg-zinc-800 flex items-center justify-center text-zinc-700 italic">Project Preview</div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Speech Interface UI</h3>
+                        <p class="text-zinc-400 text-sm mb-4 flex-grow">Interactive voice-to-command interface designed for accessibility and high-speed interaction.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] bg-zinc-800 text-indigo-400 px-2 py-1 rounded uppercase font-bold tracking-wider">Python</span>
+                            <span class="text-[10px] bg-zinc-800 text-indigo-400 px-2 py-1 rounded uppercase font-bold tracking-wider">NLP</span>
+                        </div>
+                        <a href="https://github.com/nidhijain16" class="text-white text-sm font-bold flex items-center hover:text-indigo-400 transition">
+                            View on GitHub <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 flex flex-col">
+                    <div class="h-48 bg-zinc-800 flex items-center justify-center text-zinc-700 italic">Project Preview</div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Statistical Insights</h3>
+                        <p class="text-zinc-400 text-sm mb-4 flex-grow">Comprehensive data modeling dashboard analyzing research data from Fraunhofer sets.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] bg-zinc-800 text-indigo-400 px-2 py-1 rounded uppercase font-bold tracking-wider">R Language</span>
+                            <span class="text-[10px] bg-zinc-800 text-indigo-400 px-2 py-1 rounded uppercase font-bold tracking-wider">Tidyverse</span>
+                        </div>
+                        <a href="https://github.com/nidhijain16" class="text-white text-sm font-bold flex items-center hover:text-indigo-400 transition">
+                            View on GitHub <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">Get In Touch</h2>
+            <p class="text-zinc-400 mb-10">I am currently open to new opportunities and collaborations in AI development and Backend Engineering.</p>
+            
+            <div class="flex flex-col gap-4">
+                <a href="mailto:jain1607nidhi@gmail.com" class="flex items-center justify-center gap-3 p-4 bg-zinc-900 border border-zinc-800 rounded-xl hover:bg-zinc-800 transition">
+                    <span class="text-indigo-500 font-medium">Email:</span>
+                    <span class="text-zinc-200">jain1607nidhi@gmail.com</span>
+                </a>
+                <div class="flex gap-4">
+                    <a href="https://linkedin.com/in/nidhi-jain-1607" target="_blank" class="flex-1 p-4 bg-zinc-900 border border-zinc-800 rounded-xl hover:bg-zinc-800 transition font-medium text-zinc-200">LinkedIn</a>
+                    <a href="https://github.com/nidhijain16" target="_blank" class="flex-1 p-4 bg-zinc-900 border border-zinc-800 rounded-xl hover:bg-zinc-800 transition font-medium text-zinc-200">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-zinc-900 text-center text-zinc-600 text-sm">
+        <p>&copy; 2026 Nidhi Jain. Built with Tailwind CSS. Hosted on GitHub.</p>
+    </footer>
+
+</body>
+</html>
