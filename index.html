@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Hello World!</h1>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Hero Section -->
+    <section class="bg-blue-500 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold">Welcome to My Portfolio</h1>
+            <p class="mt-4 text-xl">I'm a passionate Web Developer</p>
+            <a href="#about" class="mt-8 inline-block bg-white text-blue-500 px-6 py-3 rounded-full font-semibold">
+                Learn More
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">About Me</h2>
+            <p class="mt-4 px-6 lg:px-0">I am a web developer with a passion for creating beautiful and functional websites. My journey in web development started a few years ago and I've been enjoying every moment of it!</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-gray-200 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">My Skills</h2>
+            <div class="mt-10 flex justify-center space-x-4">
+                <span class="bg-blue-500 text-white px-4 py-2 rounded">HTML</span>
+                <span class="bg-blue-500 text-white px-4 py-2 rounded">CSS</span>
+                <span class="bg-blue-500 text-white px-4 py-2 rounded">JavaScript</span>
+                <span class="bg-blue-500 text-white px-4 py-2 rounded">React</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">My Projects</h2>
+            <ul class="mt-10">
+                <li class="my-4"><a href="#" class="text-blue-500">Project 1</a></li>
+                <li class="my-4"><a href="#" class="text-blue-500">Project 2</a></li>
+                <li class="my-4"><a href="#" class="text-blue-500">Project 3</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-200 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Contact Me</h2>
+            <p class="mt-4">Feel free to reach out!</p>
+            <form class="mt-6">
+                <input type="text" placeholder="Your Name" class="border-2 border-blue-500 p-2 rounded">
+                <input type="email" placeholder="Your Email" class="border-2 border-blue-500 p-2 rounded">
+                <textarea placeholder="Your Message" class="border-2 border-blue-500 p-2 rounded"></textarea>
+                <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-blue-500 text-white text-center py-4">
+        <p>&copy; 2026 My Portfolio</p>
+    </footer>
+
 </body>
 </html>
