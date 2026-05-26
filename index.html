@@ -74,6 +74,29 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
+        /* Scroll Reveal Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Filter Button Active State */
+        .filter-btn.active {
+            background-color: #10b981;
+            color: white;
+            border-color: #10b981;
+        }
+        
+        /* Project Cards Hide State */
+        .project-card.hide {
+            display: none !important;
+        }
     </style>
 </head>
 <body class="antialiased font-sans selection:bg-emerald-500/30 selection:text-emerald-200">
@@ -169,7 +192,7 @@
         </div>
     </section>
 
-    <section id="experience" class="py-24 px-6 relative z-10 bg-slate-900/50">
+    <section id="experience" class="py-24 px-6 relative z-10 bg-slate-900/50 reveal">
         <div class="max-w-5xl mx-auto">
             <h2 class="font-display text-3xl font-bold text-white mb-12 flex items-center gap-3">
                 <i data-lucide="briefcase" class="text-emerald-500"></i> Professional History
@@ -220,7 +243,7 @@
         </div>
     </section>
 
-    <section id="skills" class="py-24 px-6 relative z-10">
+    <section id="skills" class="py-24 px-6 relative z-10 reveal">
         <div class="max-w-6xl mx-auto">
             <h2 class="font-display text-3xl font-bold text-white mb-12 text-center">Technical Expertise</h2>
             
@@ -291,67 +314,259 @@
         </div>
     </section>
 
-    <section id="projects" class="py-24 px-6 relative z-10 bg-slate-900/50">
+    <section id="projects" class="py-24 px-6 relative z-10 bg-slate-900/50 reveal">
         <div class="max-w-6xl mx-auto">
-            <h2 class="font-display text-3xl font-bold text-white mb-12 flex items-center gap-3">
+            <h2 class="font-display text-3xl font-bold text-white mb-8 flex items-center gap-3">
                 <i data-lucide="layers" class="text-emerald-500"></i> Featured Projects
             </h2>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Filters -->
+            <div class="flex flex-wrap gap-3 mb-12">
+                <button class="filter-btn active px-5 py-2 rounded-full border border-slate-700 text-sm font-semibold text-slate-300 hover:border-emerald-500 hover:text-white transition" data-filter="all">All</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-slate-700 text-sm font-semibold text-slate-300 hover:border-emerald-500 hover:text-white transition" data-filter="ai">AI & ML</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-slate-700 text-sm font-semibold text-slate-300 hover:border-emerald-500 hover:text-white transition" data-filter="engineering">Data Engineering</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-slate-700 text-sm font-semibold text-slate-300 hover:border-emerald-500 hover:text-white transition" data-filter="analytics">Analytics & Viz</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-slate-700 text-sm font-semibold text-slate-300 hover:border-emerald-500 hover:text-white transition" data-filter="xr">VR / XR</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-grid">
                 
-                <div class="pro-card rounded-xl overflow-hidden group flex flex-col h-full">
+                <!-- Project 1: RAG Evaluation -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai ml nlp">
                     <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
                         <i data-lucide="bot" class="w-12 h-12 text-emerald-400 group-hover:scale-110 transition"></i>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-2">RAG Evaluation Framework</h3>
                         <p class="text-slate-400 text-sm mb-4 flex-grow">
-                            A comprehensive framework for evaluating Retrieval-Augmented Generation (RAG) pipelines, ensuring accuracy and relevance in LLM outputs.
+                            A comprehensive framework using LangChain/NVIDIA for evaluating RAG pipelines, ensuring accuracy and mitigating LLM hallucinations.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
                             <span class="text-[10px] font-bold uppercase text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded">NLP</span>
                             <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">Python</span>
                         </div>
-                        <a href="https://github.com/nidhijain16/RAG-Evaluation-Framework" target="_blank" class="mt-6 text-sm font-semibold text-white flex items-center gap-2 hover:text-emerald-400 transition">
+                        <a href="https://github.com/nidhijain16/RAG-Evaluation-Framework" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
                             View Code <i data-lucide="external-link" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="pro-card rounded-xl overflow-hidden group flex flex-col h-full">
+                <!-- Project 2: Agent Evaluation Latency Suite -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai ml engineering">
                     <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
-                        <i data-lucide="activity" class="w-12 h-12 text-sky-400 group-hover:scale-110 transition"></i>
+                        <i data-lucide="timer" class="w-12 h-12 text-sky-400 group-hover:scale-110 transition"></i>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Oncology Survival Analysis</h3>
+                        <h3 class="text-xl font-bold text-white mb-2">Agent Evaluation Suite</h3>
                         <p class="text-slate-400 text-sm mb-4 flex-grow">
-                            Predictive modeling using Kaplan-Meier and Cox proportional hazards to identify cancer treatment prognostic indicators.
+                            Multi-Agent Evaluation Suite using LangGraph to benchmark TTFT latency and verify AI agent production SLAs.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-sky-400 bg-sky-500/10 px-2 py-1 rounded">Biostats</span>
-                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">R Language</span>
+                            <span class="text-[10px] font-bold uppercase text-sky-400 bg-sky-500/10 px-2 py-1 rounded">LangGraph</span>
+                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">CI/CD</span>
                         </div>
-                        <a href="https://github.com/nidhijain16/oncology-survival-analysis" target="_blank" class="mt-6 text-sm font-semibold text-white flex items-center gap-2 hover:text-emerald-400 transition">
-                            View Analysis <i data-lucide="external-link" class="w-4 h-4"></i>
+                        <a href="#" class="mt-6 text-sm font-semibold text-slate-500 flex items-center gap-2 hover:text-slate-400 transition" title="GitHub link pending">
+                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="pro-card rounded-xl overflow-hidden group flex flex-col h-full">
+                <!-- Project 3: Automated Task DB -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai nlp automation">
                     <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
                         <i data-lucide="layout-grid" class="w-12 h-12 text-purple-400 group-hover:scale-110 transition"></i>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-2">Automated Task DB</h3>
                         <p class="text-slate-400 text-sm mb-4 flex-grow">
-                            Automated system inspired by Notion, utilizing OpenAI API to interpret unstructured input and generate structured databases.
+                            Notion-inspired system utilizing OpenAI API to interpret unstructured input and dynamically generate structured databases.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
                             <span class="text-[10px] font-bold uppercase text-purple-400 bg-purple-500/10 px-2 py-1 rounded">Automation</span>
-                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">API</span>
+                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">OpenAI</span>
                         </div>
-                        <a href="https://github.com/nidhijain16/automated-task-db" target="_blank" class="mt-6 text-sm font-semibold text-white flex items-center gap-2 hover:text-emerald-400 transition">
+                        <a href="https://github.com/nidhijain16/automated-task-db" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
                             View Code <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: VR Speech Thesis -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai xr vr engineering">
+                    <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
+                        <i data-lucide="headset" class="w-12 h-12 text-pink-400 group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Real-Time VR Speech Interface</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Built an 83ms low-latency Speech-to-Text pipeline (Whisper + Coqui TTS) for Meta Quest Pro VR environments.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-[10px] font-bold uppercase text-pink-400 bg-pink-500/10 px-2 py-1 rounded">Unity XR</span>
+                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">STT / TTS</span>
+                        </div>
+                        <a href="#" class="mt-6 text-sm font-semibold text-slate-500 flex items-center gap-2 hover:text-slate-400 transition" title="GitHub link pending">
+                            Thesis Repo (Pending) <i data-lucide="github" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Real-Time Data Pipeline -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="engineering">
+                    <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
+                        <i data-lucide="git-merge" class="w-12 h-12 text-yellow-400 group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Real-Time Data Pipelines</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Reproducible audio/image ingestion, quality checks, and feature extraction (spectrograms) using TFRecords.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-[10px] font-bold uppercase text-yellow-400 bg-yellow-500/10 px-2 py-1 rounded">ETL</span>
+                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">TFRecords</span>
+                        </div>
+                        <a href="#" class="mt-6 text-sm font-semibold text-slate-500 flex items-center gap-2 hover:text-slate-400 transition" title="GitHub link pending">
+                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6: Oncology Survival Analysis -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics biostats">
+                    <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
+                        <i data-lucide="activity" class="w-12 h-12 text-emerald-400 group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Oncology Survival Analysis</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Predictive modeling using Kaplan-Meier and Cox proportional hazards to identify cancer treatment indicators.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-[10px] font-bold uppercase text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded">Biostats</span>
+                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">R Language</span>
+                        </div>
+                        <a href="https://github.com/nidhijain16/oncology-survival-analysis" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
+                            View Analysis <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 7: Hospital Scoring Model -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics">
+                    <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
+                        <i data-lucide="building-2" class="w-12 h-12 text-sky-400 group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Hospital Scoring Model</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Composite scoring model utilizing z-score normalization and PCA sensitivity checks to aggregate performance metrics.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-[10px] font-bold uppercase text-sky-400 bg-sky-500/10 px-2 py-1 rounded">PCA</span>
+                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">Pandas</span>
+                        </div>
+                        <a href="#" class="mt-6 text-sm font-semibold text-slate-500 flex items-center gap-2 hover:text-slate-400 transition" title="GitHub link pending">
+                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 8: Adversarial Attacks -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai cv security">
+                    <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
+                        <i data-lucide="shield-alert" class="w-12 h-12 text-red-400 group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Adversarial ML Attacks</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Evaluated neural network robustness against JSMA attacks on CIFAR-10, improving resilience by 10% via adversarial training.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-[10px] font-bold uppercase text-red-400 bg-red-500/10 px-2 py-1 rounded">CV Security</span>
+                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">PyTorch</span>
+                        </div>
+                        <a href="#" class="mt-6 text-sm font-semibold text-slate-500 flex items-center gap-2 hover:text-slate-400 transition" title="GitHub link pending">
+                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 9: Quantitative Text Analysis -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai nlp analytics">
+                    <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
+                        <i data-lucide="file-text" class="w-12 h-12 text-indigo-400 group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Quantitative Text Analysis</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Deep learning-based word embedding model for advanced feature extraction, boosting text classification accuracy by 15%.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-[10px] font-bold uppercase text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded">Word2Vec</span>
+                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">NLP</span>
+                        </div>
+                        <a href="#" class="mt-6 text-sm font-semibold text-slate-500 flex items-center gap-2 hover:text-slate-400 transition" title="GitHub link pending">
+                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 10: Object Detection -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai cv">
+                    <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
+                        <i data-lucide="scan-line" class="w-12 h-12 text-teal-400 group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Real-Time Object Detection</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Computer vision pipeline achieving 85% detection efficiency and automating visual data extraction processes.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-[10px] font-bold uppercase text-teal-400 bg-teal-500/10 px-2 py-1 rounded">YOLOv8</span>
+                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">OpenCV</span>
+                        </div>
+                        <a href="#" class="mt-6 text-sm font-semibold text-slate-500 flex items-center gap-2 hover:text-slate-400 transition" title="GitHub link pending">
+                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 11: Used Car Price -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics ml">
+                    <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
+                        <i data-lucide="car" class="w-12 h-12 text-orange-400 group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Car Price Prediction Model</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Statistical pricing model applying AIC and BIC criteria for rigorous feature selection and accurate market valuations.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-[10px] font-bold uppercase text-orange-400 bg-orange-500/10 px-2 py-1 rounded">Stats Models</span>
+                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">Scikit</span>
+                        </div>
+                        <a href="#" class="mt-6 text-sm font-semibold text-slate-500 flex items-center gap-2 hover:text-slate-400 transition" title="GitHub link pending">
+                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 12: Football Viz -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics viz">
+                    <div class="h-40 bg-slate-800/50 flex items-center justify-center border-b border-white/5 group-hover:bg-slate-800 transition">
+                        <i data-lucide="bar-chart-2" class="w-12 h-12 text-green-400 group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Football League Analytics</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Dynamic visualization dashboard aggregating 10 seasons of player data to track shifting league demographics.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-[10px] font-bold uppercase text-green-400 bg-green-500/10 px-2 py-1 rounded">Data Viz</span>
+                            <span class="text-[10px] font-bold uppercase text-slate-400 bg-slate-800 px-2 py-1 rounded">Dashboards</span>
+                        </div>
+                        <a href="#" class="mt-6 text-sm font-semibold text-slate-500 flex items-center gap-2 hover:text-slate-400 transition" title="GitHub link pending">
+                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
@@ -378,6 +593,57 @@
         <p class="text-slate-600 text-sm">© 2026 Nidhi Jain. Hosted on GitHub.</p>
     </footer>
 
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal(); // Trigger on load
+
+        // Project Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    // Fast hide transition
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.95)';
+                    
+                    setTimeout(() => {
+                        if (filterValue === 'all' || category.includes(filterValue)) {
+                            card.classList.remove('hide');
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, 50);
+                        } else {
+                            card.classList.add('hide');
+                        }
+                    }, 300); // Wait for fade out to finish
+                });
+            });
+        });
+    </script>
 </body>
 </html>
