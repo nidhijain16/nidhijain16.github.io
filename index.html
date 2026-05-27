@@ -47,7 +47,6 @@
             color: #a1a1aa;
         }
         
-        
 
         /* Professional Card Styles */
         .pro-card {
@@ -179,29 +178,29 @@
                 </h1>
                 
                 <p class="text-lg text-zinc-400 mb-10 max-w-xl leading-relaxed">
-                    I am a Data Scientist and Engineer. I build robust <strong>ETL pipelines</strong>, deploy <strong>Machine Learning models</strong>, and architect <strong>AI solutions</strong> that solve real business problems.
+                    I am a Data Scientist and AI Engineer. I build robust <strong>ETL pipelines</strong>, deploy <strong>Machine Learning models</strong>, and architect <strong>LLM-powered AI systems</strong> with real-time performance optimization.
                 </p>
 
                 <div class="flex flex-wrap gap-4">
                     <a href="#projects" class="px-8 py-3.5 bg-emerald-600 hover:bg-zinc-400 text-white rounded-lg font-semibold transition shadow-lg shadow-emerald-500/20 flex items-center gap-2">
                         <i data-lucide="database"></i> View Data Projects
                     </a>
-                    <a href="https://linkedin.com/in/nidhi-jain-1607" target="_blank" class="px-8 py-3.5 bg-zinc-800 hover:bg-zinc-800 text-white border border-zinc-800 rounded-lg font-semibold transition border border-zinc-800 flex items-center gap-2">
+                    <a href="https://linkedin.com/in/nidhi-jain-1607" target="_blank" class="px-8 py-3.5 bg-zinc-800 hover:bg-zinc-800 text-white border border-zinc-800 rounded-lg font-semibold transition">
                         <i data-lucide="linkedin"></i> LinkedIn
                     </a>
                 </div>
                 
                 <div class="grid grid-cols-3 gap-8 mt-16 border-t border-zinc-800 pt-8">
                     <div>
-                        <div class="text-3xl font-display font-bold text-white">4+</div>
-                        <div class="text-sm text-zinc-500 font-medium">Years coding</div>
+                        <div class="text-3xl font-display font-bold text-white">5+</div>
+                        <div class="text-sm text-zinc-500 font-medium">Years Experience</div>
                     </div>
                     <div>
                         <div class="text-3xl font-display font-bold text-white">M.Sc.</div>
                         <div class="text-sm text-zinc-500 font-medium">Data Science</div>
                     </div>
                     <div>
-                        <div class="text-3xl font-display font-bold text-white">15+</div>
+                        <div class="text-3xl font-display font-bold text-white">20+</div>
                         <div class="text-sm text-zinc-500 font-medium">Projects Delivered</div>
                     </div>
                 </div>
@@ -219,11 +218,11 @@
                         <div class="text-xs font-mono text-zinc-500">analysis_pipeline.py</div>
                     </div>
                     <div class="space-y-4 font-mono text-sm">
-                        <div class="flex gap-4"><span class="text-zinc-500">01</span> <span class="text-purple-400">import</span> <span class="text-white">pandas</span> <span class="text-purple-400">as</span> <span class="text-white">pd</span></div>
+                        <div class="flex gap-4"><span class="text-zinc-500">01</span> <span class="text-purple-400">import</span> <span class="text-white">pandas</span></div>
                         <div class="flex gap-4"><span class="text-zinc-500">02</span> <span class="text-purple-400">import</span> <span class="text-white">torch</span></div>
-                        <div class="flex gap-4"><span class="text-zinc-500">03</span> <span class="text-white"></span></div>
+                        <div class="flex gap-4"><span class="text-zinc-500">03</span> <span class="text-purple-400">from</span> <span class="text-white">langchain</span> <span class="text-purple-400">import</span> <span class="text-white">RAG</span></div>
                         <div class="flex gap-4"><span class="text-zinc-500">04</span> <span class="text-emerald-400"># Load and Process Data</span></div>
-                        <div class="flex gap-4"><span class="text-zinc-500">05</span> <span class="text-white">df = pd.read_sql(<span class="text-sky-300">query</span>, <span class="text-sky-300">connection</span>)</span></div>
+                        <div class="flex gap-4"><span class="text-zinc-500">05</span> <span class="text-white">df = pd.read_sql(<span class="text-sky-300">query</span>, conn)</span></div>
                         <div class="flex gap-4"><span class="text-zinc-500">06</span> <span class="text-white">df[<span class="text-green-300">'normalized'</span>] = scaler.fit_transform(df)</span></div>
                         <div class="flex gap-4"><span class="text-zinc-500">07</span> <span class="text-white">model = <span class="text-yellow-300">TransformerModel</span>(input_dim=512)</span></div>
                         <div class="flex gap-4"><span class="text-zinc-500">08</span> <span class="text-blue-400">return</span> <span class="text-white">model.predict(df)</span></div>
@@ -249,21 +248,24 @@
                     </div>
                     <div class="text-zinc-400 font-medium mb-4">Fraunhofer Institute ISI • Heilbronn, Germany</div>
                     <ul class="list-disc list-inside text-sm text-zinc-500 space-y-1 marker:text-emerald-500">
-                        <li>Developed real-time <strong>Speech-to-Text</strong> pipelines using OpenAI Whisper & FastSpeech2.</li>
-                        <li>Designed data flows for content production teams using Unity & C#.</li>
+                        <li>Built multi-component speech recognition pipeline (Whisper + Coqui TTS) achieving <strong>130ms end-to-end latency</strong> for real-time VR communication.</li>
+                        <li>Designed and deployed VR application reducing content production time by <strong>40%</strong>.</li>
+                        <li>Integrated LLMs (Ollama, OpenAI, HuggingFace, Azure) with reproducible GitLab workflows.</li>
+                        <li>Led workshops on AI transformation opportunities for XR environments.</li>
                     </ul>
                 </div>
 
                 <div class="relative pl-10 group">
                     <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-zinc-600 ring-4 ring-zinc-600/20 group-hover:ring-zinc-500/40 transition"></div>
                     <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-                        <h3 class="text-xl font-bold text-white">Risk Technologies Student</h3>
+                        <h3 class="text-xl font-bold text-white">Working Student - Risk Technologies</h3>
                         <span class="text-sm font-mono text-zinc-500 bg-zinc-800 px-3 py-1 rounded">2023 - 2024</span>
                     </div>
                     <div class="text-zinc-400 font-medium mb-4">ARAG SE • Düsseldorf, Germany</div>
                     <ul class="list-disc list-inside text-sm text-zinc-500 space-y-1 marker:text-zinc-500">
-                        <li>Improved internal risk model accuracy by <strong>4%</strong> through C# & R optimization.</li>
-                        <li>Designed <strong>ETL pipelines</strong> connecting R analysis components to SharePoint.</li>
+                        <li>Improved internal risk model accuracy by <strong>4%</strong> through implementation of bug fixes and feature enhancements.</li>
+                        <li>Reduced ETL pipeline runtime by <strong>15%</strong>; implemented Solvency II validation covering 10+ risk models.</li>
+                        <li>Enhanced data compatibility by <strong>5%</strong> through interface adaptation and code maintenance (linting).</li>
                     </ul>
                 </div>
 
@@ -275,8 +277,9 @@
                     </div>
                     <div class="text-zinc-400 font-medium mb-4">A. Lange & Söhne • Glashütte, Germany</div>
                     <ul class="list-disc list-inside text-sm text-zinc-500 space-y-1 marker:text-zinc-500">
-                        <li>Optimized pricing strategies increasing customer satisfaction by <strong>15%</strong>.</li>
-                        <li>Built advanced Excel/Python forecasting models to identify sales disparities.</li>
+                        <li>Optimized pricing strategies through customer segmentation, increasing satisfaction by <strong>15%</strong> and average order value by <strong>10%</strong>.</li>
+                        <li>Identified product sales disparities through data visualization, resulting in <strong>20% market share increase</strong> and <strong>10% revenue boost</strong>.</li>
+                        <li>Developed advanced Excel/Python forecasting models for reporting and stakeholder communication.</li>
                     </ul>
                 </div>
 
@@ -299,16 +302,18 @@
                             <h4 class="text-sm font-semibold text-zinc-300 mb-2 uppercase tracking-wider">Languages</h4>
                             <div class="flex flex-wrap gap-2">
                                 <span class="px-3 py-1 bg-zinc-800 text-white text-xs rounded border border-zinc-800">Python (Expert)</span>
-                                <span class="px-3 py-1 bg-zinc-800 text-white text-xs rounded border border-zinc-800">R Language</span>
                                 <span class="px-3 py-1 bg-zinc-800 text-white text-xs rounded border border-zinc-800">SQL</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-white text-xs rounded border border-zinc-800">R Language</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-white text-xs rounded border border-zinc-800">C#</span>
                             </div>
                         </div>
                         <div>
-                            <h4 class="text-sm font-semibold text-zinc-300 mb-2 uppercase tracking-wider">Frameworks</h4>
+                            <h4 class="text-sm font-semibold text-zinc-300 mb-2 uppercase tracking-wider">Frameworks & Tools</h4>
                             <div class="flex flex-wrap gap-2">
                                 <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-xs rounded border border-zinc-800">PyTorch</span>
-                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-xs rounded border border-zinc-800">TensorFlow</span>
-                                <span class="px-3 py-1 bg-emerald-900/30 text-emerald-300 text-xs rounded border border-emerald-800">LLMs / LangChain</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-xs rounded border border-zinc-800">Scikit-Learn</span>
+                                <span class="px-3 py-1 bg-emerald-900/30 text-emerald-300 text-xs rounded border border-emerald-800">LangChain / LangGraph</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-xs rounded border border-zinc-800">Pandas / NumPy</span>
                             </div>
                         </div>
                     </div>
@@ -317,16 +322,20 @@
                 <div class="pro-card p-8 rounded-2xl md:col-span-1">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="p-2 bg-sky-500/10 rounded-lg text-sky-400"><i data-lucide="server"></i></div>
-                        <h3 class="text-xl font-bold text-white">Engineering</h3>
+                        <h3 class="text-xl font-bold text-white">Data & ML Engineering</h3>
                     </div>
                     <div class="space-y-4">
                         <div>
-                            <div class="flex justify-between text-xs text-zinc-400 mb-1"><span>ETL / Pipelines</span> <span>90%</span></div>
+                            <div class="flex justify-between text-xs text-zinc-400 mb-1"><span>ETL / Pipelines</span> <span>95%</span></div>
+                            <div class="w-full bg-zinc-700 h-1.5 rounded-full"><div class="bg-sky-500 h-1.5 rounded-full w-[95%]"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-zinc-400 mb-1"><span>LLM Integration</span> <span>90%</span></div>
                             <div class="w-full bg-zinc-700 h-1.5 rounded-full"><div class="bg-sky-500 h-1.5 rounded-full w-[90%]"></div></div>
                         </div>
                         <div>
-                            <div class="flex justify-between text-xs text-zinc-400 mb-1"><span>Cloud (Azure/AWS)</span> <span>75%</span></div>
-                            <div class="w-full bg-zinc-700 h-1.5 rounded-full"><div class="bg-sky-500 h-1.5 rounded-full w-[75%]"></div></div>
+                            <div class="flex justify-between text-xs text-zinc-400 mb-1"><span>Production Deployment</span> <span>85%</span></div>
+                            <div class="w-full bg-zinc-700 h-1.5 rounded-full"><div class="bg-sky-500 h-1.5 rounded-full w-[85%]"></div></div>
                         </div>
                     </div>
                 </div>
@@ -334,21 +343,49 @@
                 <div class="pro-card p-8 rounded-2xl md:col-span-3">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="p-2 bg-purple-500/10 rounded-lg text-purple-400"><i data-lucide="pie-chart"></i></div>
-                        <h3 class="text-xl font-bold text-white">Tools & Certifications</h3>
+                        <h3 class="text-xl font-bold text-white">Infrastructure & Certifications</h3>
                     </div>
-                    <div class="flex flex-wrap gap-4 text-sm">
-                         <span class="flex items-center gap-2 text-zinc-300 bg-zinc-800/50 px-3 py-2 rounded-lg border border-zinc-800">
-                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Power BI / Tableau
-                        </span>
-                        <span class="flex items-center gap-2 text-zinc-300 bg-zinc-800/50 px-3 py-2 rounded-lg border border-zinc-800">
-                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> NVIDIA: Building RAG Agents
-                        </span>
-                        <span class="flex items-center gap-2 text-zinc-300 bg-zinc-800/50 px-3 py-2 rounded-lg border border-zinc-800">
-                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Databricks Generative AI
-                        </span>
-                        <span class="flex items-center gap-2 text-zinc-300 bg-zinc-800/50 px-3 py-2 rounded-lg border border-zinc-800">
-                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> IBM Data Science
-                        </span>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="text-sm font-semibold text-zinc-300 mb-2 uppercase tracking-wider">Tools & Infrastructure</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="flex items-center gap-2 text-zinc-300 bg-zinc-800/50 px-3 py-2 rounded-lg border border-zinc-800 text-xs">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Docker / CI-CD
+                                </span>
+                                <span class="flex items-center gap-2 text-zinc-300 bg-zinc-800/50 px-3 py-2 rounded-lg border border-zinc-800 text-xs">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Git / Bitbucket / GitLab
+                                </span>
+                                <span class="flex items-center gap-2 text-zinc-300 bg-zinc-800/50 px-3 py-2 rounded-lg border border-zinc-800 text-xs">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Snowflake / Databricks
+                                </span>
+                                <span class="flex items-center gap-2 text-zinc-300 bg-zinc-800/50 px-3 py-2 rounded-lg border border-zinc-800 text-xs">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Apache Spark / Kafka
+                                </span>
+                                <span class="flex items-center gap-2 text-zinc-300 bg-zinc-800/50 px-3 py-2 rounded-lg border border-zinc-800 text-xs">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Power BI / Advanced Excel
+                                </span>
+                                <span class="flex items-center gap-2 text-zinc-300 bg-zinc-800/50 px-3 py-2 rounded-lg border border-zinc-800 text-xs">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Unity / AR/VR Development
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-zinc-300 mb-2 uppercase tracking-wider">Certifications (2025-2026)</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="flex items-center gap-2 text-zinc-300 bg-purple-900/30 px-3 py-2 rounded-lg border border-purple-800 text-xs">
+                                    <i data-lucide="award" class="w-4 h-4 text-purple-400"></i> NVIDIA: Building RAG Agents
+                                </span>
+                                <span class="flex items-center gap-2 text-zinc-300 bg-purple-900/30 px-3 py-2 rounded-lg border border-purple-800 text-xs">
+                                    <i data-lucide="award" class="w-4 h-4 text-purple-400"></i> Databricks Generative AI
+                                </span>
+                                <span class="flex items-center gap-2 text-zinc-300 bg-purple-900/30 px-3 py-2 rounded-lg border border-purple-800 text-xs">
+                                    <i data-lucide="award" class="w-4 h-4 text-purple-400"></i> McKinsey Forward Program
+                                </span>
+                                <span class="flex items-center gap-2 text-zinc-300 bg-purple-900/30 px-3 py-2 rounded-lg border border-purple-800 text-xs">
+                                    <i data-lucide="award" class="w-4 h-4 text-purple-400"></i> Deutsch B1 (German Proficiency)
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -364,30 +401,30 @@
             <!-- Project Filters -->
             <div class="flex flex-wrap gap-3 mb-12">
                 <button class="filter-btn active px-5 py-2 rounded-full border border-zinc-800 text-sm font-semibold text-zinc-300 hover:border-emerald-500 hover:text-white transition" data-filter="all">All</button>
-                <button class="filter-btn px-5 py-2 rounded-full border border-zinc-800 text-sm font-semibold text-zinc-300 hover:border-emerald-500 hover:text-white transition" data-filter="ai">AI & ML</button>
-                <button class="filter-btn px-5 py-2 rounded-full border border-zinc-800 text-sm font-semibold text-zinc-300 hover:border-emerald-500 hover:text-white transition" data-filter="engineering">Data Engineering</button>
-                <button class="filter-btn px-5 py-2 rounded-full border border-zinc-800 text-sm font-semibold text-zinc-300 hover:border-emerald-500 hover:text-white transition" data-filter="analytics">Analytics & Viz</button>
-                <button class="filter-btn px-5 py-2 rounded-full border border-zinc-800 text-sm font-semibold text-zinc-300 hover:border-emerald-500 hover:text-white transition" data-filter="xr">VR / XR</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-zinc-800 text-sm font-semibold text-zinc-300 hover:border-emerald-500 hover:text-white transition" data-filter="ai">AI/LLM</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-zinc-800 text-sm font-semibold text-zinc-300 hover:border-emerald-500 hover:text-white transition" data-filter="engineering">Engineering</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-zinc-800 text-sm font-semibold text-zinc-300 hover:border-emerald-500 hover:text-white transition" data-filter="analytics">Analytics</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-zinc-800 text-sm font-semibold text-zinc-300 hover:border-emerald-500 hover:text-white transition" data-filter="xr">XR/VR</button>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-grid">
                 <!-- Project 4: VR Speech Thesis -->
                 <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai xr vr engineering">
                     <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
                         <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
                             <i data-lucide="headset" class="w-6 h-6 text-emerald-600"></i>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Real-Time VR Speech Interface</h3>
+                        <h3 class="text-xl font-bold text-white mb-2">Real-Time VR Speech Interface (M.Sc. Thesis)</h3>
                         <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Built an 83ms low-latency Speech-to-Text pipeline (Whisper + Coqui TTS) for Meta Quest Pro VR environments.
+                            Built an <strong>83ms low-latency</strong> Speech-to-Text pipeline (Whisper + Coqui TTS) for Meta Quest Pro VR environments with real-time optimization focus.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
                             <span class="text-[10px] font-bold uppercase text-pink-400 bg-pink-500/10 px-2 py-1 rounded">Unity XR</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">STT / TTS</span>
+                            <span class="text-[10px] font-bold uppercase text-blue-400 bg-blue-500/10 px-2 py-1 rounded">Speech-to-Text</span>
                         </div>
                         <a href="https://github.com/nidhijain16/AI-Speech-Interface-Research" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
                             Thesis Repo <i data-lucide="external-link" class="w-4 h-4"></i>
@@ -395,33 +432,34 @@
                     </div>
                 </div>
 
-                <!-- Project 5: Real-Time Data Pipeline -->
-                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="engineering">
+                <!-- Project: Agent Evaluation Latency Suite -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai ml engineering">
                     <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
                         <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
-                            <i data-lucide="headset" class="w-6 h-6 text-emerald-600"></i>
+                            <i data-lucide="timer" class="w-6 h-6 text-emerald-600"></i>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Real-Time Data Pipelines</h3>
+                        <h3 class="text-xl font-bold text-white mb-2">Agent Evaluation Latency Suite</h3>
                         <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Reproducible audio/image ingestion, quality checks, and feature extraction (spectrograms) using TFRecords.
+                            Multi-Agent Evaluation Suite using LangGraph implementing stateful verification loops to reduce hallucinations and measure TTFT latency across concurrent simulations achieving <strong>sub-second response times</strong>.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-yellow-400 bg-yellow-500/10 px-2 py-1 rounded">ETL</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">TFRecords</span>
+                            <span class="text-[10px] font-bold uppercase text-sky-400 bg-sky-500/10 px-2 py-1 rounded">LangGraph</span>
+                            <span class="text-[10px] font-bold uppercase text-green-400 bg-green-500/10 px-2 py-1 rounded">RAG</span>
                         </div>
-                        <a href="#" class="mt-6 text-sm font-semibold text-zinc-500 flex items-center gap-2 hover:text-zinc-400 transition" title="GitHub link pending">
-                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
+                        <a href="https://github.com/nidhijain16/AgentEval-Latency-Suite" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
+                            View Code <i data-lucide="external-link" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
+
                 <!-- Project 1: RAG Evaluation -->
                 <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai ml nlp">
                     <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
                         <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
                             <i data-lucide="bot" class="w-6 h-6 text-emerald-600"></i>
@@ -430,44 +468,22 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-2">RAG Evaluation Framework</h3>
                         <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            A comprehensive framework using LangChain/NVIDIA for evaluating RAG pipelines, ensuring accuracy and mitigating LLM hallucinations.
+                            Comprehensive framework using LangChain/NVIDIA tools for evaluating RAG pipelines, ensuring accuracy and mitigating LLM hallucinations in production systems.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-emerald-400 bg-zinc-400/10 px-2 py-1 rounded">NLP</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">Python</span>
+                            <span class="text-[10px] font-bold uppercase text-emerald-400 bg-zinc-400/10 px-2 py-1 rounded">RAG</span>
+                            <span class="text-[10px] font-bold uppercase text-blue-400 bg-blue-500/10 px-2 py-1 rounded">LangChain</span>
                         </div>
                         <a href="https://github.com/nidhijain16/RAG-Evaluation-Framework" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
                             View Code <i data-lucide="external-link" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
-                <!-- Project 2: Agent Evaluation Latency Suite -->
-                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai ml engineering">
-                    <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
-                        <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
-                            <i data-lucide="timer" class="w-6 h-6 text-emerald-600"></i>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Agent Evaluation Suite</h3>
-                        <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Multi-Agent Evaluation Suite using LangGraph to benchmark TTFT latency and verify AI agent production SLAs.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-sky-400 bg-sky-500/10 px-2 py-1 rounded">LangGraph</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">CI/CD</span>
-                        </div>
-                        <a href="https://github.com/nidhijain16/AgentEval-Latency-Suite" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
-                            View Code <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
+
                 <!-- Project 3: Automated Task DB -->
                 <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai nlp automation">
                     <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
                         <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
                             <i data-lucide="layout-grid" class="w-6 h-6 text-emerald-600"></i>
@@ -476,21 +492,46 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-2">Automated Task DB</h3>
                         <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Notion-inspired system utilizing OpenAI API to interpret unstructured input and dynamically generate structured databases.
+                            Notion-inspired system utilizing OpenAI API to interpret unstructured user input and dynamically generate structured databases using NLP.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-purple-400 bg-purple-500/10 px-2 py-1 rounded">Automation</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">OpenAI</span>
+                            <span class="text-[10px] font-bold uppercase text-purple-400 bg-purple-500/10 px-2 py-1 rounded">OpenAI API</span>
+                            <span class="text-[10px] font-bold uppercase text-orange-400 bg-orange-500/10 px-2 py-1 rounded">Automation</span>
                         </div>
                         <a href="https://github.com/nidhijain16/automated-task-db" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
                             View Code <i data-lucide="external-link" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
+
+                <!-- Project 5: Real-Time Data Pipeline -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="engineering">
+                    <div class="h-48 relative overflow-hidden border-b border-zinc-800">
+                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
+                        <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
+                            <i data-lucide="git-branch" class="w-6 h-6 text-emerald-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Real-Time Data Pipelines</h3>
+                        <p class="text-zinc-400 text-sm mb-4 flex-grow">
+                            Reproducible audio/image ingestion with quality checks and feature extraction (spectrograms) using Python, librosa, and TFRecords for repeatable experiments.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-[10px] font-bold uppercase text-yellow-400 bg-yellow-500/10 px-2 py-1 rounded">ETL</span>
+                            <span class="text-[10px] font-bold uppercase text-cyan-400 bg-cyan-500/10 px-2 py-1 rounded">TFRecords</span>
+                        </div>
+                        <a href="#" class="mt-6 text-sm font-semibold text-zinc-500 flex items-center gap-2 hover:text-zinc-400 transition" title="GitHub link pending">
+                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Project 6: Oncology Survival Analysis -->
                 <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics biostats">
                     <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1584036561565-baf8f50a4b73?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1584036561565-baf8f50a4b73?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
                         <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
                             <i data-lucide="activity" class="w-6 h-6 text-emerald-600"></i>
@@ -499,159 +540,22 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-2">Oncology Survival Analysis</h3>
                         <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Predictive modeling using Kaplan-Meier and Cox proportional hazards to identify cancer treatment indicators.
+                            Predictive modeling using Kaplan-Meier, Cox proportional hazards, and accelerated failure time models to identify cancer treatment indicators.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-emerald-400 bg-zinc-400/10 px-2 py-1 rounded">Biostats</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">R Language</span>
+                            <span class="text-[10px] font-bold uppercase text-emerald-400 bg-zinc-400/10 px-2 py-1 rounded">Survival Analysis</span>
+                            <span class="text-[10px] font-bold uppercase text-red-400 bg-red-500/10 px-2 py-1 rounded">R Language</span>
                         </div>
                         <a href="https://github.com/nidhijain16/oncology-survival-analysis" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
                             View Analysis <i data-lucide="external-link" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
-                <!-- Project 13: Income Classification -->
-                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics ml">
-                    <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
-                        <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
-                            <i data-lucide="users" class="w-6 h-6 text-emerald-600"></i>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Income Classification Analysis</h3>
-                        <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Statistical analysis and machine learning models to classify and predict income brackets based on demographic data.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-blue-400 bg-blue-500/10 px-2 py-1 rounded">ML</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">Analytics</span>
-                        </div>
-                        <a href="https://github.com/nidhijain16/income-classification-analysis" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
-                            View Code <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Project 14: AI Detector -->
-                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai nlp">
-                    <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
-                        <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
-                            <i data-lucide="shield-check" class="w-6 h-6 text-emerald-600"></i>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">AI Content Detector</h3>
-                        <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Machine learning model designed to distinguish between human-written and AI-generated text content.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded">NLP</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">Classification</span>
-                        </div>
-                        <a href="https://github.com/nidhijain16/AI_Detector" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
-                            View Code <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Project 15: Vendor Predictor -->
-                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics ml">
-                    <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
-                        <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
-                            <i data-lucide="truck" class="w-6 h-6 text-emerald-600"></i>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Vendor Consistency Predictor</h3>
-                        <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Predictive analytics model to evaluate and forecast vendor reliability and supply chain consistency.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-yellow-400 bg-yellow-500/10 px-2 py-1 rounded">Predictive</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">Analytics</span>
-                        </div>
-                        <a href="https://github.com/nidhijain16/-vendor-consistency-predictor" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
-                            View Code <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Project 16: Predictive Risk -->
-                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics">
-                    <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
-                        <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
-                            <i data-lucide="alert-triangle" class="w-6 h-6 text-emerald-600"></i>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Predictive Risk Management</h3>
-                        <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Data-driven risk assessment framework utilizing predictive modeling to identify and mitigate potential business risks.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-red-400 bg-red-500/10 px-2 py-1 rounded">Risk Model</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">Analytics</span>
-                        </div>
-                        <a href="https://github.com/nidhijain16/Predictive-Risk-Management" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
-                            View Code <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Project 17: NutriGen RAG -->
-                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai nlp">
-                    <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
-                        <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
-                            <i data-lucide="apple" class="w-6 h-6 text-emerald-600"></i>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">NutriGen RAG Agent</h3>
-                        <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Retrieval-Augmented Generation (RAG) conversational agent tailored for personalized nutritional guidance and genomic data.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-emerald-400 bg-zinc-400/10 px-2 py-1 rounded">RAG</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">LLMs</span>
-                        </div>
-                        <a href="https://github.com/nidhijain16/NutriGen-RAG-Agent" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
-                            View Code <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Project 18: Habit Tracker -->
-                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="engineering analytics">
-                    <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
-                        <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
-                            <i data-lucide="check-square" class="w-6 h-6 text-emerald-600"></i>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Habit Tracker App</h3>
-                        <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Interactive tracking application with data visualization components to monitor and analyze personal habits over time.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-sky-400 bg-sky-500/10 px-2 py-1 rounded">App Dev</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">Tracking</span>
-                        </div>
-                        <a href="https://github.com/nidhijain16/habit-tracker" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
-                            View Code <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
+
                 <!-- Project 7: Hospital Scoring Model -->
                 <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics">
                     <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
                         <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
                             <i data-lucide="building-2" class="w-6 h-6 text-emerald-600"></i>
@@ -660,21 +564,22 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-2">Hospital Scoring Model</h3>
                         <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Composite scoring model utilizing z-score normalization and PCA sensitivity checks to aggregate performance metrics.
+                            Composite scoring model utilizing z-score normalization and PCA sensitivity checks to aggregate performance metrics like mortality and patient satisfaction.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
                             <span class="text-[10px] font-bold uppercase text-sky-400 bg-sky-500/10 px-2 py-1 rounded">PCA</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">Pandas</span>
+                            <span class="text-[10px] font-bold uppercase text-blue-400 bg-blue-500/10 px-2 py-1 rounded">Pandas</span>
                         </div>
                         <a href="#" class="mt-6 text-sm font-semibold text-zinc-500 flex items-center gap-2 hover:text-zinc-400 transition" title="GitHub link pending">
                             View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
+
                 <!-- Project 8: Adversarial Attacks -->
                 <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai cv security">
                     <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
                         <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
                             <i data-lucide="shield-alert" class="w-6 h-6 text-emerald-600"></i>
@@ -683,67 +588,94 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-2">Adversarial ML Attacks</h3>
                         <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Evaluated neural network robustness against JSMA attacks on CIFAR-10, improving resilience by 10% via adversarial training.
+                            Evaluated neural network robustness against JSMA attacks on CIFAR-10, improving resilience by <strong>10%</strong> through adversarial training via 5-fold cross-validation.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
                             <span class="text-[10px] font-bold uppercase text-red-400 bg-red-500/10 px-2 py-1 rounded">CV Security</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">PyTorch</span>
+                            <span class="text-[10px] font-bold uppercase text-purple-400 bg-purple-500/10 px-2 py-1 rounded">PyTorch</span>
                         </div>
                         <a href="#" class="mt-6 text-sm font-semibold text-zinc-500 flex items-center gap-2 hover:text-zinc-400 transition" title="GitHub link pending">
                             View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
-                <!-- Project 9: Quantitative Text Analysis -->
-                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai nlp analytics">
+
+                <!-- Project 13: Income Classification -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics ml">
                     <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
                         <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
-                            <i data-lucide="file-text" class="w-6 h-6 text-emerald-600"></i>
+                            <i data-lucide="users" class="w-6 h-6 text-emerald-600"></i>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Quantitative Text Analysis</h3>
+                        <h3 class="text-xl font-bold text-white mb-2">Income Classification Analysis</h3>
                         <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Deep learning-based word embedding model for advanced feature extraction, boosting text classification accuracy by 15%.
+                            Statistical analysis and machine learning models to classify and predict income brackets based on demographic data using multiple algorithms.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded">Word2Vec</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">NLP</span>
+                            <span class="text-[10px] font-bold uppercase text-blue-400 bg-blue-500/10 px-2 py-1 rounded">ML</span>
+                            <span class="text-[10px] font-bold uppercase text-green-400 bg-green-500/10 px-2 py-1 rounded">Analytics</span>
                         </div>
-                        <a href="#" class="mt-6 text-sm font-semibold text-zinc-500 flex items-center gap-2 hover:text-zinc-400 transition" title="GitHub link pending">
-                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
+                        <a href="https://github.com/nidhijain16/income-classification-analysis" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
+                            View Code <i data-lucide="external-link" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
-                <!-- Project 10: Object Detection -->
-                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai cv">
+
+                <!-- Project 14: AI Detector -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai nlp">
                     <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
                         <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
-                            <i data-lucide="scan-line" class="w-6 h-6 text-emerald-600"></i>
+                            <i data-lucide="shield-check" class="w-6 h-6 text-emerald-600"></i>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Real-Time Object Detection</h3>
+                        <h3 class="text-xl font-bold text-white mb-2">AI Content Detector</h3>
                         <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Computer vision pipeline achieving 85% detection efficiency and automating visual data extraction processes.
+                            Machine learning model designed to distinguish between human-written and AI-generated text content using NLP and embeddings.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-teal-400 bg-teal-500/10 px-2 py-1 rounded">YOLOv8</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">OpenCV</span>
+                            <span class="text-[10px] font-bold uppercase text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded">NLP</span>
+                            <span class="text-[10px] font-bold uppercase text-violet-400 bg-violet-500/10 px-2 py-1 rounded">Classification</span>
                         </div>
-                        <a href="#" class="mt-6 text-sm font-semibold text-zinc-500 flex items-center gap-2 hover:text-zinc-400 transition" title="GitHub link pending">
-                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
+                        <a href="https://github.com/nidhijain16/AI_Detector" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
+                            View Code <i data-lucide="external-link" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
+
+                <!-- Project 17: NutriGen RAG -->
+                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="ai nlp">
+                    <div class="h-48 relative overflow-hidden border-b border-zinc-800">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
+                        <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
+                            <i data-lucide="apple" class="w-6 h-6 text-emerald-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">NutriGen RAG Agent</h3>
+                        <p class="text-zinc-400 text-sm mb-4 flex-grow">
+                            Retrieval-Augmented Generation (RAG) conversational agent tailored for personalized nutritional guidance integrated with genomic data analysis.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-[10px] font-bold uppercase text-emerald-400 bg-zinc-400/10 px-2 py-1 rounded">RAG</span>
+                            <span class="text-[10px] font-bold uppercase text-blue-400 bg-blue-500/10 px-2 py-1 rounded">LLMs</span>
+                        </div>
+                        <a href="https://github.com/nidhijain16/NutriGen-RAG-Agent" target="_blank" class="mt-6 text-sm font-semibold text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition">
+                            View Code <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Project 11: Used Car Price -->
                 <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics ml">
                     <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
                         <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
                             <i data-lucide="car" class="w-6 h-6 text-emerald-600"></i>
@@ -752,34 +684,11 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-2">Car Price Prediction Model</h3>
                         <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Statistical pricing model applying AIC and BIC criteria for rigorous feature selection and accurate market valuations.
+                            Statistical pricing model applying AIC and BIC criteria for rigorous feature selection and accurate market valuations using regression techniques.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-4">
                             <span class="text-[10px] font-bold uppercase text-orange-400 bg-orange-500/10 px-2 py-1 rounded">Stats Models</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">Scikit</span>
-                        </div>
-                        <a href="#" class="mt-6 text-sm font-semibold text-zinc-500 flex items-center gap-2 hover:text-zinc-400 transition" title="GitHub link pending">
-                            View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Project 12: Football Viz -->
-                <div class="project-card pro-card rounded-xl overflow-hidden group flex flex-col h-full" data-category="analytics viz">
-                    <div class="h-48 relative overflow-hidden border-b border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&q=80&w=600&h=400" alt="Thumbnail" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-80 group-hover:opacity-40 transition"></div>
-                        <div class="absolute bottom-4 left-4 p-2.5 bg-zinc-900/90 backdrop-blur-md rounded-xl shadow-sm group-hover:-translate-y-1 transition duration-300">
-                            <i data-lucide="bar-chart-2" class="w-6 h-6 text-emerald-600"></i>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Football League Analytics</h3>
-                        <p class="text-zinc-400 text-sm mb-4 flex-grow">
-                            Dynamic visualization dashboard aggregating 10 seasons of player data to track shifting league demographics.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="text-[10px] font-bold uppercase text-green-400 bg-green-500/10 px-2 py-1 rounded">Data Viz</span>
-                            <span class="text-[10px] font-bold uppercase text-zinc-400 bg-zinc-800 px-2 py-1 rounded">Dashboards</span>
+                            <span class="text-[10px] font-bold uppercase text-cyan-400 bg-cyan-500/10 px-2 py-1 rounded">Scikit</span>
                         </div>
                         <a href="#" class="mt-6 text-sm font-semibold text-zinc-500 flex items-center gap-2 hover:text-zinc-400 transition" title="GitHub link pending">
                             View Code (Coming Soon) <i data-lucide="github" class="w-4 h-4"></i>
@@ -797,7 +706,7 @@
                 <a href="mailto:jain1607nidhi@gmail.com" class="px-8 py-4 bg-emerald-600 hover:bg-zinc-400 text-white rounded-lg font-bold transition flex items-center justify-center gap-2">
                     <i data-lucide="mail"></i> Email Me
                 </a>
-                <a href="https://linkedin.com/in/nidhi-jain-1607" target="_blank" class="px-8 py-4 bg-zinc-800 hover:bg-zinc-800 text-white border border-zinc-800 rounded-lg font-bold transition flex items-center justify-center gap-2">
+                <a href="https://linkedin.com/in/nidhi-jain-1607" target="_blank" class="px-8 py-4 bg-zinc-800 hover:bg-zinc-800 text-white border border-zinc-800 rounded-lg font-bold transition">
                     <i data-lucide="linkedin"></i> Connect on LinkedIn
                 </a>
             </div>
