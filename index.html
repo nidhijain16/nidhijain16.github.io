@@ -1,91 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nidhi Jain | Data Scientist & AI Engineer</title>
-    <meta name="description" content="Portfolio of Nidhi Jain - Data Scientist specializing in ML, NLP, and Data Engineering.">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        zinc: {
-                            850: '#151e2e',
-                            900: '#0f172a',
-                            950: '#020617',
-                        },
-                        emerald: {
-                            400: '#34d399',
-                            500: '#10b981',
-                        },
-                        accent: '#38bdf8',
-                    },
-                    backgroundImage: {
-                        'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
-                    }
-                }
-            }
-        }
-    </script>
-
-    <style>
-        body {
-            background-color: #18181b;
-            color: #a1a1aa;
-        }
-
-        .pro-card {
-            background: rgba(39, 39, 42, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .pro-card:hover {
-            border-color: rgba(255, 255, 255, 0.15);
-            transform: translateY(-2px);
-        }
-
-        .pro-card::before {
-            content: "";
-            background: radial-gradient(
-                800px circle at var(--mouse-x) var(--mouse-y),
-                rgba(255, 255, 255, 0.06),
-                transparent 40%
-            );
-            border-radius: inherit;
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            opacity: 0;
-            transition: opacity 0.5s;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .pro-card:hover::before {
-            opacity: 1;
-        }
-        
-        .pro-card > div {
-            position: relative;
+   position: relative;
             z-index: 1;
         }
 
@@ -136,6 +49,339 @@
         .animation-delay-4000 {
             animation-delay: 4s;
         }
+
+        :root {
+            color-scheme: light;
+            --paper: #f5f6ef;
+            --ink: #19352b;
+            --muted: #5f7068;
+            --green: #38694f;
+            --line: #dce4da;
+            --card: #fffefa;
+            --lime: #d8ee79;
+        }
+
+        html { scroll-padding-top: 5.5rem; }
+
+        body {
+            background: var(--paper) !important;
+            color: var(--ink) !important;
+            font-family: 'DM Sans', sans-serif !important;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background-image:
+                radial-gradient(circle at 82% 10%, rgba(216, 238, 121, .18), transparent 24rem),
+                linear-gradient(rgba(25, 53, 43, .025) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(25, 53, 43, .025) 1px, transparent 1px);
+            background-size: auto, 44px 44px, 44px 44px;
+        }
+
+        body [class~="text-white"] { color: var(--ink) !important; }
+        body [class~="text-zinc-300"],
+        body [class~="text-zinc-400"] { color: #53665c !important; }
+        body [class~="text-zinc-500"],
+        body [class~="text-zinc-600"] { color: #748178 !important; }
+        body [class~="text-emerald-400"],
+        body [class~="text-emerald-500"] { color: var(--green) !important; }
+        body [class~="text-purple-400"] { color: #75599a !important; }
+        body [class~="text-sky-300"],
+        body [class~="text-sky-400"] { color: #26708b !important; }
+        body [class~="text-blue-400"] { color: #4566a5 !important; }
+        body [class~="text-green-300"] { color: #477343 !important; }
+        body [class~="text-yellow-300"] { color: #8c671f !important; }
+
+        body [class~="bg-zinc-900/80"] {
+            background-color: rgba(250, 251, 246, .9) !important;
+        }
+        body [class~="bg-zinc-900/50"] {
+            background-color: rgba(231, 238, 228, .78) !important;
+        }
+        body [class~="bg-zinc-900"] { background-color: var(--green) !important; }
+        body [class~="bg-zinc-800"] { background-color: #fffefa !important; }
+        body [class~="bg-zinc-800/50"] { background-color: #f0f3ec !important; }
+        body [class~="bg-zinc-400/10"] { background-color: #e9f0e8 !important; }
+        body [class~="bg-zinc-400"] { background-color: #91a598 !important; }
+        body [class~="bg-zinc-600"] { background-color: #91a598 !important; }
+        body [class~="bg-emerald-600"] { background-color: var(--green) !important; }
+        body [class~="bg-emerald-900/30"] { background-color: #e7f0e5 !important; }
+        body [class~="bg-purple-900/30"] { background-color: #eee9f4 !important; }
+        body [class~="border-zinc-800"],
+        body [class~="border-zinc-700"] { border-color: var(--line) !important; }
+        body [class~="hover:bg-zinc-400"]:hover,
+        body [class~="hover:bg-zinc-700"]:hover,
+        body [class~="hover:bg-zinc-800"]:hover {
+            background-color: #e5ece3 !important;
+        }
+
+        nav[class~="bg-zinc-900/80"] {
+            border-color: rgba(25, 53, 43, .11) !important;
+            box-shadow: 0 8px 28px rgba(37, 61, 45, .045);
+        }
+
+        nav .max-w-7xl { min-height: 4.5rem !important; }
+        nav a { transition: color .2s ease, background-color .2s ease, transform .2s ease; }
+        nav a:hover { color: var(--green) !important; }
+        nav .font-display { font-family: 'DM Sans', sans-serif !important; letter-spacing: -.055em; }
+        nav a.bg-zinc-900 { color: #fffefa !important; }
+
+        section { scroll-margin-top: 5rem; }
+        body > section:first-of-type {
+            min-height: min(850px, 100svh) !important;
+            padding-top: 7rem !important;
+            padding-bottom: 5rem;
+        }
+
+        body > section:first-of-type h1 {
+            max-width: 760px;
+            font-family: 'Fraunces', Georgia, serif !important;
+            font-size: clamp(3.35rem, 6.3vw, 5.6rem) !important;
+            font-weight: 500 !important;
+            letter-spacing: -.055em;
+            line-height: .99 !important;
+        }
+
+        body > section:first-of-type h1 span {
+            color: var(--green) !important;
+            background: none !important;
+            -webkit-text-fill-color: var(--green) !important;
+        }
+
+        body > section:first-of-type > div:first-child { opacity: .22 !important; }
+        body > section:first-of-type > div:first-child > div {
+            mix-blend-mode: multiply;
+            opacity: .5 !important;
+        }
+        body > section:first-of-type p { color: #53665c !important; }
+        body > section:first-of-type p strong { color: var(--ink); }
+        body > section:first-of-type .grid.grid-cols-3 {
+            border-color: var(--line) !important;
+        }
+        body > section:first-of-type .text-3xl { color: var(--green) !important; }
+        body > section:first-of-type a.bg-emerald-600,
+        #contact a.bg-emerald-600 {
+            background: var(--green) !important;
+            box-shadow: 0 10px 24px rgba(56, 105, 79, .18) !important;
+        }
+        body > section:first-of-type a.bg-emerald-600 { color: #fffefa !important; }
+        body > section:first-of-type a.bg-emerald-600:hover,
+        #contact a.bg-emerald-600:hover {
+            background: #284f3a !important;
+            color: #fff !important;
+        }
+        body > section:first-of-type a.bg-zinc-800,
+        #contact a.bg-zinc-800 {
+            border-color: var(--line) !important;
+        }
+
+        .pro-card {
+            background: var(--card) !important;
+            border: 1px solid rgba(37, 68, 48, .11) !important;
+            box-shadow: 0 18px 50px rgba(37, 61, 45, .075);
+            backdrop-filter: blur(12px);
+        }
+        .pro-card:hover {
+            border-color: rgba(56, 105, 79, .28) !important;
+            box-shadow: 0 24px 60px rgba(37, 61, 45, .12);
+            transform: translateY(-4px);
+        }
+        .pro-card::before {
+            background: radial-gradient(700px circle at var(--mouse-x) var(--mouse-y), rgba(94, 139, 95, .09), transparent 42%);
+        }
+
+        #experience { background: rgba(231, 238, 228, .72) !important; }
+        #experience h2, #skills h2, #projects h2 {
+            font-family: 'Fraunces', Georgia, serif !important;
+            font-size: clamp(2.2rem, 4vw, 3rem) !important;
+            font-weight: 500 !important;
+            letter-spacing: -.04em;
+        }
+        #experience h3, #skills h3, #projects h3 { letter-spacing: -.025em; }
+        #experience ul { line-height: 1.75; }
+        #experience strong { color: var(--ink); }
+
+        #skills .pro-card { border-radius: 1.35rem !important; }
+        #skills .pro-card h4 { color: #65736a !important; }
+        #skills .pro-card span {
+            border-color: #dfe7dc !important;
+            border-radius: 999px !important;
+        }
+        #skills .pro-card .w-full.bg-zinc-700 {
+            background: #e7ece5 !important;
+            overflow: hidden;
+        }
+
+        #projects { background: rgba(245, 246, 239, .8) !important; }
+        #projects .project-card {
+            border-radius: 1.2rem !important;
+            box-shadow: 0 12px 34px rgba(37, 61, 45, .065);
+        }
+        #projects .project-card > div:first-child {
+            min-height: 12.5rem;
+            border-bottom-color: rgba(25, 53, 43, .09) !important;
+            background-image:
+                radial-gradient(circle at 18% 20%, rgba(255,255,255,.62) 0 1px, transparent 2px),
+                linear-gradient(135deg, #e2eee0, #bad4c3) !important;
+            background-size: 22px 22px, auto !important;
+        }
+        #featured-grid .project-card:nth-child(2) > div:first-child {
+            background-image:
+                radial-gradient(circle at 18% 20%, rgba(255,255,255,.62) 0 1px, transparent 2px),
+                linear-gradient(135deg, #dce4f5, #b6c5e7) !important;
+        }
+        #featured-grid .project-card:nth-child(3) > div:first-child {
+            background-image:
+                radial-gradient(circle at 18% 20%, rgba(255,255,255,.62) 0 1px, transparent 2px),
+                linear-gradient(135deg, #f5e8d0, #f0c9a9) !important;
+        }
+        #more-grid .project-card:nth-child(3n + 2) > div:first-child {
+            background-image:
+                radial-gradient(circle at 18% 20%, rgba(255,255,255,.62) 0 1px, transparent 2px),
+                linear-gradient(135deg, #e9e2f1, #d1c1e0) !important;
+        }
+        #more-grid .project-card:nth-child(3n) > div:first-child {
+            background-image:
+                radial-gradient(circle at 18% 20%, rgba(255,255,255,.62) 0 1px, transparent 2px),
+                linear-gradient(135deg, #f4e1dc, #eabeb2) !important;
+        }
+        #projects .project-card > div:first-child > div:first-child svg {
+            color: rgba(25, 53, 43, .34) !important;
+            stroke-width: 1.25;
+            transform: rotate(-7deg);
+            transition: transform .4s ease;
+        }
+        #projects .project-card:hover > div:first-child > div:first-child svg {
+            transform: rotate(0) scale(1.08);
+        }
+        #projects .project-card > div:first-child > div:nth-child(2) {
+            background: linear-gradient(to top, rgba(25,53,43,.13), transparent) !important;
+            opacity: 1 !important;
+        }
+        #projects .project-card > div:first-child > div:nth-child(3) {
+            background: rgba(255, 254, 250, .86) !important;
+            border: 1px solid rgba(25, 53, 43, .08);
+            box-shadow: 0 8px 20px rgba(25, 53, 43, .1);
+        }
+        #projects .project-card [class*="text-[10px]"] {
+            color: #42654d !important;
+            background: #edf3e9 !important;
+            border-radius: 999px !important;
+            letter-spacing: .055em;
+            padding: .35rem .65rem !important;
+        }
+        #projects .project-card p { line-height: 1.7; }
+        #projects .project-card a { color: var(--green) !important; }
+        #projects .project-card a:hover { color: #214b35 !important; }
+        #toggle-more {
+            background: var(--ink) !important;
+            color: #fffefa !important;
+            border-radius: 999px !important;
+            padding: .9rem 1.4rem !important;
+        }
+        #toggle-more:hover { background: var(--green) !important; color: #fffefa !important; }
+        .more-projects { transition: max-height .65s ease, opacity .45s ease; }
+        .more-projects.expanded { max-height: 6500px; }
+
+        #contact { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+        #contact .max-w-3xl {
+            max-width: 58rem !important;
+            padding: clamp(2.5rem, 6vw, 5rem) 1.5rem !important;
+            border-radius: 2rem;
+            background:
+                radial-gradient(circle at 90% 5%, rgba(216, 238, 121, .15), transparent 18rem),
+                #1c3a2e;
+            box-shadow: 0 24px 60px rgba(25, 53, 43, .14);
+        }
+        #contact h2 {
+            color: #fffefa !important;
+            font-family: 'Fraunces', Georgia, serif !important;
+            font-size: clamp(2.3rem, 5vw, 3.5rem) !important;
+            font-weight: 500 !important;
+            letter-spacing: -.04em;
+        }
+        #contact a.bg-emerald-600 {
+            background: var(--lime) !important;
+            color: var(--ink) !important;
+            box-shadow: none !important;
+        }
+        #contact a.bg-emerald-600:hover { background: #e6f59b !important; color: var(--ink) !important; }
+        #contact a.bg-zinc-800 {
+            background: rgba(255,255,255,.1) !important;
+            border-color: rgba(255,255,255,.2) !important;
+            color: #fffefa !important;
+        }
+        #contact a.bg-zinc-800:hover { background: rgba(255,255,255,.17) !important; }
+
+        footer {
+            background: #edf0e8 !important;
+            border-color: var(--line) !important;
+        }
+        footer p { color: #6b786f !important; }
+
+        #mobile-menu-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 2.8rem;
+            height: 2.8rem;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: #fffefa;
+            color: var(--ink);
+        }
+        #mobile-menu a {
+            display: block;
+            padding: .85rem 1rem;
+            border-radius: .8rem;
+            color: var(--ink) !important;
+            font-size: .95rem;
+            font-weight: 600;
+        }
+        #mobile-menu a:hover { background: #edf3e9; }
+
+        @media (max-width: 767px) {
+            body > section:first-of-type {
+                min-height: 0 !important;
+                padding-top: 7.5rem !important;
+                padding-bottom: 4rem !important;
+            }
+            body > section:first-of-type h1 { font-size: clamp(3.15rem, 13vw, 4.6rem) !important; }
+            body > section:first-of-type h1 br { display: none; }
+            body > section:first-of-type .grid.grid-cols-3 { gap: .8rem !important; margin-top: 2.75rem !important; }
+            body > section:first-of-type .grid.grid-cols-3 .text-3xl { font-size: 1.7rem !important; }
+            body > section:first-of-type .grid.grid-cols-3 .text-sm { font-size: .72rem !important; line-height: 1.35; }
+            #mobile-menu-toggle { display: inline-flex; }
+            #mobile-menu {
+                position: absolute;
+                top: calc(100% + .55rem);
+                left: 1rem;
+                right: 1rem;
+                padding: .5rem;
+                border: 1px solid var(--line);
+                border-radius: 1rem;
+                background: rgba(255,254,250,.98);
+                box-shadow: 0 16px 36px rgba(25, 53, 43, .13);
+            }
+            #experience, #skills, #projects { padding-top: 4.5rem !important; padding-bottom: 4.5rem !important; }
+            #experience .relative.border-l { margin-left: .35rem; }
+            #contact .max-w-3xl { border-radius: 1.5rem; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
     </style>
 </head>
 <body class="antialiased font-sans selection:bg-zinc-400/30 selection:text-emerald-200">
@@ -157,17 +403,27 @@
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
             </div>
+            <button id="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false">
+                <i data-lucide="menu" class="w-5 h-5"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden" aria-label="Mobile navigation">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Stack</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <section class="min-h-screen flex items-center pt-20 px-6 relative z-10 overflow-hidden">
+    <section id="about" class="min-h-screen flex items-center pt-20 px-6 relative z-10 overflow-hidden">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl opacity-40 pointer-events-none z-0">
             <div class="absolute top-0 -left-4 w-72 h-72 bg-emerald-300 rounded-full mix-blend-screen filter blur-3xl opacity-70 animate-blob"></div>
             <div class="absolute top-0 -right-4 w-72 h-72 bg-sky-300 rounded-full mix-blend-screen filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
             <div class="absolute -bottom-8 left-20 w-72 h-72 bg-purple-300 rounded-full mix-blend-screen filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
         </div>
         
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-[1.15fr_.85fr] gap-10 lg:gap-16 items-center relative z-10">
             <div>
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-800 border border-zinc-800 mb-8">
                     <span class="relative flex h-2 w-2">
@@ -176,7 +432,7 @@
                     <span class="text-xs font-semibold text-zinc-300 tracking-wide uppercase">Available for Hire</span>
                 </div>
                 
-                <h1 class="font-display text-5xl md:text-7xl font-bold leading-[1.1] mb-6 text-white">
+                <h1 class="font-display text-5xl md:text-6xl xl:text-7xl font-bold leading-[1.1] mb-6 text-white">
                     Turning Complex Data into <br>
                     <span class="bg-gradient-to-r from-emerald-500 via-sky-500 to-purple-500 text-transparent bg-clip-text">Intelligent Action.</span>
                 </h1>
@@ -213,7 +469,7 @@
                 </div>
             </div>
 
-            <div class="relative hidden lg:block">
+            <div class="relative hidden md:block">
                 <div class="pro-card rounded-2xl p-6 relative">
                     <div class="flex items-center justify-between mb-8 border-b border-zinc-800 pb-4">
                         <div class="flex gap-2">
@@ -662,27 +918,33 @@
             }
         });
 
-        document.addEventListener('mousemove', e => {
-            for(const card of document.querySelectorAll('.pro-card')) {
-                const rect = card.getBoundingClientRect(),
-                      x = e.clientX - rect.left,
-                      y = e.clientY - rect.top;
-                card.style.setProperty('--mouse-x', `${x}px`);
-                card.style.setProperty('--mouse-y', `${y}px`);
-            }
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = () => {
+            mobileMenu.classList.add('hidden');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.setAttribute('aria-label', 'Open navigation');
+            menuToggle.innerHTML = '<i data-lucide="menu" class="w-5 h-5"></i>';
+            lucide.createIcons();
+        };
+        menuToggle.addEventListener('click', () => {
+            const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+            mobileMenu.classList.toggle('hidden', !open);
+            menuToggle.setAttribute('aria-expanded', String(open));
+            menuToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+            menuToggle.innerHTML = `<i data-lucide="${open ? 'x' : 'menu'}" class="w-5 h-5"></i>`;
+            lucide.createIcons();
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMobileMenu));
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape') closeMobileMenu();
+        });
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) closeMobileMenu();
         });
 
-        const magneticBtns = document.querySelectorAll('a.bg-white, a.bg-zinc-800');
-        magneticBtns.forEach(btn => {
-            btn.addEventListener('mousemove', e => {
-                const rect = btn.getBoundingClientRect();
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
-                btn.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
-            });
-            btn.addEventListener('mouseleave', () => {
-                btn.style.transform = 'translate(0px, 0px)';
-            });
+        document.querySelectorAll('a[target="_blank"]').forEach(link => {
+            link.rel = 'noopener noreferrer';
         });
     </script>
 </body>
